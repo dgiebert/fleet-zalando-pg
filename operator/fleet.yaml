@@ -13,6 +13,4 @@ helm:
   values:
     image:
       registry: ghcr.io
-      repository: zalando/postgres-operator:v1.10.1
-      tag: v1.10.1
-      pullPolicy: "IfNotPresent"
+      repository: zalando/postgres-operator
