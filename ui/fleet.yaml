@@ -10,6 +10,10 @@ helm:
   chart: postgres-operator-ui
   repo: https://opensource.zalando.com/postgres-operator/charts/postgres-operator-ui
   version: 1.10.1
+  values:
+    image:
+      registry: ghcr.io
+      repository: dgiebert/postgres-operator-ui
 
 dependsOn:
   - selector:
