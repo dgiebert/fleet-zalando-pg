@@ -1,6 +1,10 @@
 
 defaultNamespace: postgres-operator
 
+namespaceLabels:
+  pod-security.kubernetes.io/enforce: baseline
+  pod-security.kubernetes.io/enforce-version: latest
+
 labels:
   app: postgres-operator
 
