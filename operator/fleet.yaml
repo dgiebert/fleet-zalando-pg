@@ -25,6 +25,7 @@ diff:
   - apiVersion: acid.zalan.do/v1
     kind: OperatorConfiguration
     name: postgres-operator
+    namespace: postgres-operator
     operations:
     - {"op": "remove", "path":"/configuration/kubernetes/enable_finalizers"}
     - {"op": "remove", "path":"/configuration/kubernetes/enable_persistent_volume_claim_deletion"}
