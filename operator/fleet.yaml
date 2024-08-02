@@ -18,3 +18,17 @@ helm:
   chart: postgres-operator
   repo: https://opensource.zalando.com/postgres-operator/charts/postgres-operator
   version: 1.12.2
+
+# Patches needed for Fleet (Operator seems to delete defaults from the configuration)
+diff:
+  comparePatches:
+  - apiVersion: acid.zalan.do/v1
+    kind: OperatorConfiguration
+    name: postgres-operator
+    operations:
+    - {"op": "remove", "path":"/configuration/kubernetes/enable_finalizers"}
+    - {"op": "remove", "path":"/configuration/kubernetes/enable_persistent_volume_claim_deletion"}
+    - {"op": "remove", "path":"/configuration/kubernetes/enable_secrets_deletion"}
+    - {"op": "remove", "path":"/configuration/kubernetes/pdb_master_label_selector"}
+    - {"op": "remove", "path":"/configuration/kubernetes/persistent_volume_claim_retention_policy"}
+    - {"op": "remove", "path":"/configuration/kubernetes/logical_backup"}
