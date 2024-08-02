@@ -28,6 +28,7 @@ diff:
     namespace: postgres-operator
     operations:
     - {"op": "remove", "path":"/configuration/kubernetes"}
+    - {"op": "remove", "path":"/configuration/logical_backup"}
     # - {"op": "remove", "path":"/configuration/kubernetes/enable_finalizers"}
     # - {"op": "remove", "path":"/configuration/kubernetes/enable_persistent_volume_claim_deletion"}
     # - {"op": "remove", "path":"/configuration/kubernetes/enable_secrets_deletion"}
