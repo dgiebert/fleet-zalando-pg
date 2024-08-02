@@ -27,9 +27,10 @@ diff:
     name: postgres-operator
     namespace: postgres-operator
     operations:
-    - {"op": "remove", "path":"/configuration/kubernetes/enable_finalizers"}
-    - {"op": "remove", "path":"/configuration/kubernetes/enable_persistent_volume_claim_deletion"}
-    - {"op": "remove", "path":"/configuration/kubernetes/enable_secrets_deletion"}
-    - {"op": "remove", "path":"/configuration/kubernetes/pdb_master_label_selector"}
-    - {"op": "remove", "path":"/configuration/kubernetes/persistent_volume_claim_retention_policy"}
-    - {"op": "remove", "path":"/configuration/kubernetes/logical_backup"}
+    - {"op": "remove", "path":"/configuration/kubernetes"}
+    # - {"op": "remove", "path":"/configuration/kubernetes/enable_finalizers"}
+    # - {"op": "remove", "path":"/configuration/kubernetes/enable_persistent_volume_claim_deletion"}
+    # - {"op": "remove", "path":"/configuration/kubernetes/enable_secrets_deletion"}
+    # - {"op": "remove", "path":"/configuration/kubernetes/pdb_master_label_selector"}
+    # - {"op": "remove", "path":"/configuration/kubernetes/persistent_volume_claim_retention_policy"}
+    # - {"op": "remove", "path":"/configuration/kubernetes/logical_backup"}
