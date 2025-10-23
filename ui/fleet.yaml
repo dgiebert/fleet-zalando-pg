@@ -9,7 +9,7 @@ helm:
   releaseName: postgres-operator-ui
   chart: postgres-operator-ui
   repo: https://opensource.zalando.com/postgres-operator/charts/postgres-operator-ui
-  version: 1.12.2
+  version: 1.13.0
 
 dependsOn:
   - selector:
