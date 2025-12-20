@@ -17,7 +17,7 @@ helm:
   releaseName: postgres-operator
   chart: postgres-operator
   repo: https://opensource.zalando.com/postgres-operator/charts/postgres-operator
-  version: 1.13.0
+  version: 1.15.1
 
 # Patches needed for Fleet (Operator seems to delete defaults from the configuration)
 diff:
